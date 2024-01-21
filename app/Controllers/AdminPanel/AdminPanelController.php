@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\AdminPanel;
 
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\CLIRequest;
@@ -19,7 +19,7 @@ use Psr\Log\LoggerInterface;
  *
  * For security be sure to declare any new methods as protected or private.
  */
-abstract class BaseController extends Controller
+abstract class AdminPanelController extends Controller
 {
     /**
      * Instance of the main Request object.
@@ -47,17 +47,15 @@ abstract class BaseController extends Controller
      * Constructor.
      */
 
-    public $common_model; // GENEL VERİTABANI SELLR_GENERAL
-    public $firm_model; // SELLR_FİRM
-    public $security_model; // FİLTERS
-    public $turkey_location_model; // TÜRKİYEDEKİ İLLER, İLÇELER, SEMTLER, MAHALLER
-    public $world_location_model; // DÜNYADAKİ ***
-    public $sess; // Oturum verileri
-    public $firmDetail; // FİRMAYA AİT TÜM VERİLER
-    public $userDetail; // KULLANICIYA AİT TÜM VERİLER
-    public $generalSettings;
-
-
+     public $common_model; // GENEL VERİTABANI SELLR_GENERAL
+     public $firm_model; // SELLR_FİRM
+     public $security_model; // FİLTERS
+     public $turkey_location_model; // TÜRKİYEDEKİ İLLER, İLÇELER, SEMTLER, MAHALLER
+     public $world_location_model; // DÜNYADAKİ ***
+     public $sess; // Oturum verileri
+     public $firmDetail; // FİRMAYA AİT TÜM VERİLER
+     public $userDetail; // KULLANICIYA AİT TÜM VERİLER
+     public $generalSettings;
 
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
