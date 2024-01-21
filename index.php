@@ -29,7 +29,7 @@ chdir(FCPATH);
  * and fires up an environment-specific bootstrapping.
  */
 
-// Load our paths config file
+// Load our paths config filea
 // This is the line that might need to be changed, depending on your folder structure.
 require FCPATH . 'app/Config/Paths.php';
 // ^^^ Change this line if you move your application folder
