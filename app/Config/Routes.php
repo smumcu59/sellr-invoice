@@ -30,7 +30,23 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('firm-panel/content','Home::index');
+
+// GİRİŞ SAYFASI
+$routes->get('/login','FirmPanel\Users::index');
+$routes->post('/login','FirmPanel\Users::loginUser');
+//
+
+
+// KAYIT OL SAYFASI
+
+
+//
+
+
+// PAROLA SIFIRLAMA SAYFASI
+
+//
+
 
 
 /*
