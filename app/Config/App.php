@@ -18,7 +18,7 @@ class App extends BaseConfig
      *    http://example.com/
      */
 
-    public string $baseURL = 'http://192.168.0.22/sellr-invoice/';
+    public string $baseURL = 'http://192.168.1.9/sellr-invoice/';
 
 
     /**
